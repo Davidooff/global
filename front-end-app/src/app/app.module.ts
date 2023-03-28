@@ -9,6 +9,7 @@ import { MainComponent } from './content-data/main/main.component';
 import { SliderSectionComponent } from './content-data/slider-section/slider-section.component';
 import { AboutSectionComponent } from './content-data/about-section/about-section.component';
 import { ContactComponent } from './content-data/contact/contact.component';
+import { HireUsComponent } from './content-data/hire-us/hire-us.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ContactComponent } from './content-data/contact/contact.component';
     SliderSectionComponent,
     AboutSectionComponent,
     ContactComponent,
+    HireUsComponent,
     
   ],
   imports: [

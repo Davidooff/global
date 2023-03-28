@@ -1,0 +1,28 @@
+.slider{
+    position: fixed;
+    display: flex;
+    height: calc(100% - 91px);
+    margin-bottom: 21px;
+    border-left: 2px solid #1e1e1e;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.point{
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: 300;
+    list-style:disc;
+    color: #606060;
+    // background: #606060;
+    border-radius: 50%;
+    &.strong-point{
+        color: white;
+        margin-left: 10px;
+        font-size: 16px;
+        // background: white;
+    }
+}

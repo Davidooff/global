@@ -1,0 +1,7 @@
+.contact{
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(  calc(-0.5 * (100vw - 1199px)) );
+    background: url('/assets/img/contact/map.png');
+    background-size: cover;
+}

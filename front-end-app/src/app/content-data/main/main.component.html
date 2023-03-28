@@ -1,0 +1,42 @@
+<section class="main">
+    <div class="main__content">
+        <div class="main__content__banner">
+            <div class="main__content__banner__text">
+                <h2>Your next <br> interactive <br> experience</h2>
+                <a href="">HIRE US</a>
+            </div>
+            <img [src]="sliderColection.curentImg" alt="" id="MainImage">
+        </div>
+        <div class="main__content__under-banner">
+            <div class="bar--line">
+                <div class="bar__progress" style="transition: 5s; width: 0;" [style.transition]="sliderColection.transition + 's'" [style.width]="sliderColection.width + '%'"></div>
+            </div>
+            <div class="bar--text row">
+                <div class="bar--text__el active_el" [ngClass]="{active_el: sliderColection.curentIndex == 0}">
+                    <h3>
+                        Metiew & Smith
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+                <div class="bar--text__el" [ngClass]="{active_el: sliderColection.curentIndex == 1}">
+                    <h3>
+                        Fantasy interactive
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+                <div class="bar--text__el" [ngClass]="{active_el: sliderColection.curentIndex == 2}">
+                    <h3>
+                        Paul & shark
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

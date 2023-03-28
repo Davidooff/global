@@ -1,0 +1,19 @@
+<section class="slider-section">
+        <a href="" class="hire-btn"> HIRE US</a>
+    <div class="content">
+        <h3>Selected work</h3>
+        <div class="slider">
+            <img src="/assets/img/main/pointer-right.png" alt="" class="pointer" (click)="clickBtn('left')">
+            <div class="slider-show">
+                <div class="slider-content" #slider [style.transition]="transition + 's'">
+                    <div *ngFor="let el of curent; index as i"  [class.center-el] = 'i == 2' [class]='[ "slider-el-" + i , "slider-el"]' [style.transition]="transition + 's'">
+                        <img [src]='el.img'  alt="">
+                        <p>{{el.text}}</p>
+                    </div>
+                </div>
+            </div>
+            <img src="/assets/img/main/pointer-right.png" alt="" class="pointer" (click)="clickBtn('right')">
+        </div>
+        <p class="slider-section-text">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed d</p>
+    </div>
+</section>

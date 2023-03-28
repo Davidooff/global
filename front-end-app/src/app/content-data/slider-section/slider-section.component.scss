@@ -1,0 +1,96 @@
+.slider-section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 80px;
+    a{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        width: 90px;
+        height: 30px;
+        background: #0f33ff;
+        margin: 20px auto 70px auto;
+        color: white;
+        text-decoration: none;
+    }
+    .content{
+        margin: auto;
+        h3{
+            font-size: 30px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .slider{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            img{
+                object-fit: contain;
+            }
+            
+            .pointer{
+                margin: auto 0 auto 48px;
+                transform:translateY(-15px);
+                width: 18px;
+                height: 14px;
+                padding: 19px 16px;
+                background-color: #282828;
+                border-radius: 50%;
+            }
+
+            .pointer:first-child{
+                margin: auto 48px auto 0;
+                transform:translateY(-15px) rotate(180deg);
+            }
+            .slider-show{
+                max-width: 780px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                .slider-content{
+                    min-width: 2000px;
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                    .slider-el{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: calc(168/1280) * 100vw;
+                        max-width: 168px;
+                        p{
+                            transition: 1s;
+                            text-align: center;
+                            margin-top: 13px;
+                        }
+                        &:not(:last-child){
+                            margin-right: 50px;
+                        }
+                        &.center-el{
+                            max-width: 330px;
+                            width: calc(330/1280) * 100vw;
+                            p{
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                    &.left{
+                        margin-left: 435px;
+                    }
+                    &.right{
+                        margin-right: 435px;
+                    }
+                }
+                
+            }
+        }
+    .slider-section-text{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    }
+}

@@ -1,0 +1,13 @@
+
+
+.content{
+    max-width: 100%;
+    width: 1199px;
+    padding: 0px 14px; 
+    margin: 0 auto;
+    position: relative;
+    .row{
+        display: flex;
+        padding-top: 70px; //70px space for header, bks header position: fix
+    }
+}

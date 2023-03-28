@@ -1,0 +1,38 @@
+.about{
+    margin-top: 87px;
+    height: calc(100vh - 70px);
+    width: 870px;
+    background: url("/assets/img/about/bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 150px;
+    padding-left: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .content{
+        h2{
+            font-size: 82px;
+            line-height: 72px;
+            font-weight: 900;
+        }
+        .photos{
+            margin-top: 100px;
+            display: flex;
+            .photos-el{
+                img{
+                    padding: 11px;
+                    background-color: #0f33ff;
+                }
+                p{
+                    font-weight: 900;
+                    font-size: 14px;
+                    transform: translateY(-10px);
+                }
+                &:not(:last-child){
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}

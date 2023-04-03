@@ -5,6 +5,7 @@ $transitionTime: 5s; //time for 1 slide on main page
     margin-left: 197px;
     display: flex;
     .main__content{
+        height: 100%;
         min-width: 100%;
         margin: auto 0;
     }
@@ -82,10 +83,11 @@ $transitionTime: 5s; //time for 1 slide on main page
 }
 @media screen and (max-width: 1200px){
     .main{
-        margin-left: 20px;
+        margin-left: 0;
+        padding: 10px;
     }
 }
-@media screen and (max-width: 897px){
+@media screen and (max-width: 897px) and (min-width: 680px){
     .bar--text{
         max-height: 100%;
         position: relative;
@@ -105,10 +107,18 @@ $transitionTime: 5s; //time for 1 slide on main page
             }
             &.active_el{
                 background: rgba(28, 26, 49, 0.7);
-                border-radius: 5px;
+                border-radius: 15px;
             }
         }
 
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .main__content__banner{
+        h2{
+            font-size: 60px !important;
+        }
     }
 }
 
@@ -122,13 +132,57 @@ $transitionTime: 5s; //time for 1 slide on main page
     }
 
 }
-@media screen and (max-height: 550px){
+@media screen and (max-width: 679px){
+    .bar--text{
+        flex-direction: column;
+        .bar--text__el{
+            h3{
+                font-size: 30px !important;
+            }
+            p{
+                font-size: 24px !important;
+                margin-bottom: 20px;
+            }
+        }
+    }
     .main__content__banner{
-        overflow: hidden; 
-        height: 250px !important;
+        height: 340px !important;
+        a{
+            margin-top: 30px !important;
+        }
         img{
-            height: 250px !important;
+            height: 340px !important;
         }
     }
 
+}
+
+@media screen and (max-width: 679px) and (max-height: 1000px){
+    .bar--text{
+        max-height: 100%;
+        position: relative;
+        .bar--text__el{
+            padding: 20px !important;
+            position: absolute;
+            width: 310px;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            // text-align: center;
+            &:first-child{
+                top: 0;
+            }
+            &:last-child{
+                top: 100px;
+            }
+            &.active_el{
+                background: rgba(28, 26, 49, 0.7);
+                border-radius: 15px;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+
+    }
 }

@@ -42,3 +42,25 @@
         width: 90%;
     }
 }
+
+@media screen and (max-width: 750px){
+    .about{
+        .content{
+            h2{
+                font-size: 50px;
+                line-height: 50px;
+            }
+            .photos{
+                flex-direction: column;
+                .photos-el{
+                    img{
+                        width: 45%;
+                    }
+                    p{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}

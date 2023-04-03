@@ -1,12 +1,11 @@
 .about{
-    margin-top: 87px;
     height: calc(100vh - 70px);
-    width: 870px;
+    width: 80%;
     background: url("/assets/img/about/bg.png");
     background-repeat: no-repeat;
     background-position: right;
     padding-top: 150px;
-    padding-left: 215px;
+    padding-left: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,5 +33,12 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about{
+        padding-left: 10%;
+        width: 90%;
     }
 }

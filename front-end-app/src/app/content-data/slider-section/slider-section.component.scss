@@ -15,7 +15,7 @@
         text-decoration: none;
     }
     .content{
-        margin: auto;
+        width: 100%;
         h3{
             font-size: 30px;
             font-weight: 900;
@@ -51,7 +51,7 @@
                 display: flex;
                 justify-content: center;
                 .slider-content{
-                    min-width: 2000px;
+                    min-width: 150%;
                     display: flex;
                     justify-content: center;
                     overflow: hidden;
@@ -78,10 +78,10 @@
                         }
                     }
                     &.left{
-                        margin-left: 435px;
+                        transform: translateX(18.8%);
                     }
                     &.right{
-                        margin-right: 435px;
+                        transform: translateX(-18.8%);
                     }
                 }
                 
@@ -92,6 +92,24 @@
         margin-top: 30px;
         font-size: 16px;
         line-height: 24px;
+    } 
     }
+}
+
+@media screen and (max-height: 654px) {
+    .hire-btn{
+        display: none !important;
+    }
+    .content{
+        padding-top: 20px;
+    }
+    .slider-section-text{
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-height: 524px){
+    .slider-section-text{
+        display: none;
     }
 }

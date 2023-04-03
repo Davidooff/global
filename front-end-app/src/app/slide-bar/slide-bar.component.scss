@@ -26,3 +26,9 @@
         // background: white;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .slider{
+        display: none;
+    }
+}

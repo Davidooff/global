@@ -32,7 +32,7 @@
             }
             
             .pointer{
-                margin: auto 0 auto 48px;
+                margin: auto 10px auto 48px;
                 transform:translateY(-15px);
                 width: 18px;
                 height: 14px;
@@ -42,7 +42,7 @@
             }
 
             .pointer:first-child{
-                margin: auto 48px auto 0;
+                margin: auto 48px auto 10px;
                 transform:translateY(-15px) rotate(180deg);
             }
             .slider-show{
@@ -168,10 +168,10 @@
         }
     }
     .pointer{
-        margin: auto 0 auto 20px !important;
+        margin: auto 5px auto 20px !important;
     }
 
     .pointer:first-child{
-        margin: auto 20px auto 0 !important;
+        margin: auto 20px auto 5px !important;
     }
 }

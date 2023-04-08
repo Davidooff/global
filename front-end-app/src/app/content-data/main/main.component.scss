@@ -2,12 +2,16 @@ $transitionTime: 5s; //time for 1 slide on main page
 
 .main{
     height: calc(100vh - 70px); /* 100vh - 100% от высоты viewport(окна браузера) */
-    margin-left: 197px;
+    // margin-left: 197px;
     display: flex;
     .main__content{
         height: 100%;
         min-width: 100%;
         margin: auto 0;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
     }
     .main__content__banner{
         height: 463px;
@@ -144,6 +148,9 @@ $transitionTime: 5s; //time for 1 slide on main page
                 margin-bottom: 20px;
             }
         }
+    }
+    .main__content{
+        transform: translateY(-150px);
     }
     .main__content__banner{
         height: 340px !important;

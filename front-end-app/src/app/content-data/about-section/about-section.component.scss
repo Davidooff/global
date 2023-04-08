@@ -53,6 +53,7 @@
             .photos{
                 flex-direction: column;
                 .photos-el{
+                    margin-right: 0 !important;
                     img{
                         width: 45%;
                     }

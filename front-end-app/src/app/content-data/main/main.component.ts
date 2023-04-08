@@ -3,7 +3,7 @@ import { Component, AfterContentInit} from '@angular/core';
 
 const transitionTime = 5 * 1000;
 class SliderColection{
-  pics = ['/assets/img/main/astronaut.png', '/assets/img/main/shutle.png', '/assets/img/main/shutle.png']
+  pics = ['assets/img/main/astronaut.png', 'assets/img/main/shutle.png', 'assets/img/main/shutle.png']
   width =  0;
   transition = transitionTime / 1000
   curentImg = 'assets/img/main/astronaut.png'

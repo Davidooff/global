@@ -39,7 +39,7 @@ $transitionTime: 5s; //time for 1 slide on main page
             width: 98px;
             padding: 12px 0;
             &::after{
-                content :  url(/assets/img/main/pointer-right.png);
+                content :  url(/global/assets/img/main/pointer-right.png);
                 display: flex;
                 margin-left: 15px;
             }
